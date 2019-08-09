@@ -1,0 +1,146 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Rishi Shah 
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.50in,top=0.45in,right=0.50in,bottom=0.6in]{geometry} % Document margins
+\usepackage[inline]{enumitem} 
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\makeatletter
+\newcommand{\inlineitem}[1][]{%
+\ifnum\enit@type=\tw@
+    {\descriptionlabel{#1}}
+  \hspace{\labelsep}%
+\else
+  \ifnum\enit@type=\z@
+       \refstepcounter{\@listctr}\fi
+    \quad\@itemlabel\hspace{\labelsep}%
+\fi}
+\makeatother
+
+
+\name{Uma Unni} % Your name
+%\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
+\address{925-899-5573 \\ umaunni@berkeley.edu \\ github.com/umaunni3} % Your phone number and email
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+{\bf University of California, Berkeley} \hfill {August 2017 -- May 2021} 
+\\ B.A., Computer Science \hfill {GPA: 3.32}
+\\ Relevant Coursework: Data Structures \& Algorithms, Efficient Algorithms \& Intractable Problems, Machine Structures, Signal Processing, Intro to Data Science, Introductory Electrical Engineering
+
+%Minor in Linguistics \smallskip \\
+%Member of Eta Kappa Nu \\
+%Member of Upsilon Pi Epsilon \\
+
+
+\end{rSection}
+\renewcommand\labelitemi{{\boldmath$\cdot$}}
+
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Work Experience}
+
+\begin{rSubsection}{IBM}{June -- August 2019}{Full Stack Software Developer Intern}{}
+\begin{itemize}
+    \item Developed Perl and Python scripts to set up development sandbox environments on Unix servers
+    \item Worked in an Agile, collaborative environment and coordinated with developers to determine the most useful sandbox functionality to implement
+    \item Consolidated and restructured an existing codebase to increase readability and portability
+\end{itemize}
+\end{rSubsection}
+
+\begin{rSubsection}{UC Berkeley EECS Department}{January 2019 -- present}{CS 61A Staff Tutor}{}
+\begin{itemize}
+    \item Taught small sections of introductory CS students on a weekly basis, covering the fundamentals of programming and software design
+    \item Helped students in office hours, and assisted with grading and website maintenance
+\end{itemize}
+
+\end{rSubsection}
+
+
+\end{rSection}
+
+
+% \begin{rSection}{Carrier Objective}
+%  To work for an organization which provides me the opportunity to improve my skills and knowledge to grow along with the organization objective.
+% \end{rSection}
+%--------------------------------------------------------------------------------
+%    Projects And Seminars
+%-----------------------------------------------------------------------------------------------
+
+\begin{rSection}{Selected Projects}
+{\bf Judgement Database for Sustainable Fashion \hfill {IBM Intern Hackathon, 2019}}
+\begin{itemize}
+    \item Built a web app that uses image recognition to identify a clothing brand logo and retrieve information about that brand's sustainability, labor practices, and more.
+    \item Developed backend and REST API with Flask to handle image processing and database queries
+\end{itemize}
+
+\\{\bf Feelsbot \hfill {Treehacks 2018}}
+\begin{itemize}
+    \item Worked with natural language processing to develop an adaptive speech therapy chat bot for autistic users, to improve conversational fluidity and emotional expression in users.
+    \item Integrated sentiment analysis and face detection techniques to provide real-time feedback and adapt to the user's emotional state
+
+\end{itemize}
+{\bf Rover \hfill {CalHacks 4.0, 2017}}
+\begin{itemize}
+    \item Built a classroom web app tool that uses machine learning to pull important key terms from a lecture and retrieve relevant learning materials from the internet (“Shazam for scholars!”)
+    \item Handled front-end development; integrated browser audio capture and back-end cloud services
+\end{itemize}
+
+
+
+\end{rSection}
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Technical Skills}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Languages \ & Python, Java, C, Go, Perl, HTML, CSS, Javascript, SQL \\
+Frameworks/Other & Flask, software design, web development, Unix, Google App Engine   \\
+\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+
+
+%	HONORS AND AWARDS
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Honors \& Awards} 
+\begin{itemize}
+    \item 2017 National Merit Scholar \inlineitem Cal Alumni Association Leadership Award (2017)
+\end{itemize}
+\end{rSection}
+
+
+\end{document}
